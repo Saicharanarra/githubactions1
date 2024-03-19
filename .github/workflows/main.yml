@@ -1,4 +1,4 @@
-Aname: pytest   # This line seems to be causing the error. It's not a valid YAML key.
+name: pytest
 
 on:
   push:
