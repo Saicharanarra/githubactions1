@@ -1,11 +1,8 @@
-from __future__ import annotations
+# test_calculate_area_square.py
+import pytest
+from calculate_area_square import calculate_area_square
 
-def calculate_area_square(length: int | float) -> int | float:  
-    """  
-    Function to calculate the area of a square  
-    :param length: length of the square  
-    :return: area of the square  
-    """  
-    if not isinstance(length, (int, float)) or length <= 0:  
-        raise TypeError("Length must be a positive non-zero number")  
-    return length * length
+def test_calculate_area_square():
+    length = 7  # You can use any arbitrary number here
+    expected_area = 49  # Changed the expected area to make the test fail
+    assert calculate_area_square(length) == expected_area
